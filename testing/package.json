@@ -1,0 +1,13 @@
+{
+  "name": "geoproof-selenium-testing",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node run-tests.js"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "selenium-webdriver": "^4.22.0"
+  }
+}
