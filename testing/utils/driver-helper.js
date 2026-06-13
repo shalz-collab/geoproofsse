@@ -29,7 +29,9 @@ export async function initDriver(config = {}) {
     "--no-sandbox",
     "--disable-dev-shm-usage",
     "--disable-gpu",
-    "--disable-web-security" // Allow testing local mocks easily
+    "--disable-web-security", // Allow testing local mocks easily
+    "--use-fake-device-for-media-stream", // Feeds fake camera stream
+    "--use-fake-ui-for-media-stream" // Bypasses mic/camera permission popup
   );
 
   if (headless) {
